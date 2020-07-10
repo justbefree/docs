@@ -2,14 +2,15 @@
 * @Author: Just be free
 * @Date:   2020-07-10 09:56:25
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-07-10 16:35:22
+* @Last Modified time: 2020-07-10 18:07:59
 * @E-mail: justbefree@126.com
 */
 const themeConfig = require("./themeConfig");
+const base = process.env.NODE_ENV === 'production' ? "/youdefine-docs/" : "/";
 module.exports = {
   // title: "yn-components 组件案例文档",
   // description: "前端基础组件技术文档",
-  base: "/", // 基础路径
+  base, // 基础路径
   markdown: {
     lineNumbers: true
   },
