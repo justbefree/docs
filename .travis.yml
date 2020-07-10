@@ -5,6 +5,10 @@ install:
   - npm install # npm ci
 script:
   - npm run docs:build # npm run docs:build
+env:
+  global:
+    secure: hash value
+
 deploy:
   provider: pages
   skip_cleanup: true
