@@ -1,11 +1,4 @@
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $160 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-
-
+# yn-components online docs
 :tada: :100:
 
 # Heading
