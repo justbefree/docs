@@ -1,0 +1,72 @@
+<template>
+  <div>
+    <yn-flex justifyContent="spaceAround" flexWrap="wrap" class="flex">
+      <yn-flex-item class="flex-item" v-for="(icon, key) in this.iconfontCollections" :key="key">
+        <yn-iconfont :name="icon" @click="handleClick"></yn-iconfont>
+        <span class="icon-name">{{icon}}</span>
+      </yn-flex-item>
+    </yn-flex>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "DemoIconfont",
+  data() {
+    return {
+      iconfontCollections: [],
+      loaded: false
+    };
+  },
+  methods: {
+    handleClick(e) {
+      console.log("111111", e);
+    },
+    loadAllIcons() {
+      if (this.loaded) {
+        return;
+      }
+      const validIcons = [];
+      const svg = document.querySelector("svg");
+      if (!svg) {
+        console.log(1, "Make sure the yn-iconfont component was installed.");
+        return false;
+      }
+      const symbol = svg.getElementsByTagName("symbol");
+      if (!symbol) {
+        console.log(2, "Make sure the yn-iconfont component was installed.");
+        return false;
+      }
+      for (let key in symbol) {
+        if (symbol[key] && symbol[key].id) {
+          validIcons.push(symbol[key].id);
+        }
+      }
+      this.iconfontCollections = validIcons;
+      this.loaded = true;
+    }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.loadAllIcons();
+    });
+    window.addEventListener("DOMContentLoaded", () => {
+      this.loadAllIcons();
+    });
+  }
+};
+</script>
+<style type="text/css" scoped="scoped">
+  .flex{
+    /* background: #efefef; */
+  }
+  .icon-name{
+    display: block;
+    /* display: none; */
+  }
+  .flex-item{
+    text-align: center;
+    width: 100px;
+    margin: 30px;
+  }
+</style>
