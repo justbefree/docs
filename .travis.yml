@@ -12,7 +12,7 @@ branches:
 
 script:
   - npm install
-  - ./deploy.sh
+  - "./deploy.sh"
   # - npm run docs:build
   # - cd docs/.vuepress/dist
   # - git init
