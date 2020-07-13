@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-07-13 16:35:27
+* @Last Modified time: 2020-07-13 17:10:28
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -12,31 +12,31 @@ module.exports = {
       title: "商旅前端基础组件",
       collapsable: false,
       children: [
-        ["/sidebar/toast.md", "toast"],
-        ["/sidebar/indicator.md", "indicator"],
-        ["/sidebar/spin.md", "spin"],
-        ["/sidebar/iconfont.md", "iconfont"],
-        ["/sidebar/checkbox.md", "checkbox"],
-        ["/sidebar/radiobox.md", "radiobox"],
-        ["/sidebar/calendar.md", "calendar"],
-        ["/sidebar/popup.md", "popup"],
-        ["/sidebar/button.md", "button"],
-        ["/sidebar/flex.md", "flex"],
-        ["/sidebar/action-sheet.md", "action-sheet"],
-        ["/sidebar/field.md", "field"],
-        ["/sidebar/layout.md", "layout"],
-        ["/sidebar/city-picker.md", "city-picker"],
-        ["/sidebar/sticky.md", "sticky"],
-        ["/sidebar/dialog.md", "dialog"],
-        ["/sidebar/picky-stepper.md", "picky-stepper"],
-        ["/sidebar/dropdown-menu.md", "dropdown-menu"],
-        ["/sidebar/picker.md", "picker"],
-        ["/sidebar/swipe.md", "swipe"],
-        ["/sidebar/tabs.md", "tabs"],
-        ["/sidebar/slider.md", "slider"],
-        ["/sidebar/submit-action.md", "submit-action"],
-        ["/sidebar/pull-refresh.md", "pull-refresh"],
-        ["/sidebar/date-picker.md", "date-picker"],
+        ["/yui/toast.md", "toast"],
+        ["/yui/indicator.md", "indicator"],
+        ["/yui/spin.md", "spin"],
+        ["/yui/iconfont.md", "iconfont"],
+        ["/yui/checkbox.md", "checkbox"],
+        ["/yui/radiobox.md", "radiobox"],
+        ["/yui/calendar.md", "calendar"],
+        ["/yui/popup.md", "popup"],
+        ["/yui/button.md", "button"],
+        ["/yui/flex.md", "flex"],
+        ["/yui/action-sheet.md", "action-sheet"],
+        ["/yui/field.md", "field"],
+        ["/yui/layout.md", "layout"],
+        ["/yui/city-picker.md", "city-picker"],
+        ["/yui/sticky.md", "sticky"],
+        ["/yui/dialog.md", "dialog"],
+        ["/yui/picky-stepper.md", "picky-stepper"],
+        ["/yui/dropdown-menu.md", "dropdown-menu"],
+        ["/yui/picker.md", "picker"],
+        ["/yui/swipe.md", "swipe"],
+        ["/yui/tabs.md", "tabs"],
+        ["/yui/slider.md", "slider"],
+        ["/yui/submit-action.md", "submit-action"],
+        ["/yui/pull-refresh.md", "pull-refresh"],
+        ["/yui/date-picker.md", "date-picker"],
       ]
     }
   ]
