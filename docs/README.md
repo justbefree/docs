@@ -40,10 +40,3 @@ console.log('你好，VuePress！')
 :::
 
 
-``` js
-export default {
-  name: 'MyComponent',
-  // ...
-}
-```
-
