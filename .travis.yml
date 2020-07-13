@@ -12,13 +12,13 @@ branches:
 
 script:
   - npm install
-  - "./deploy.sh"
-  # - npm run docs:build
-  # - cd docs/.vuepress/dist
-  # - git init
-  # - git add -A
-  # - git commit -m 'deploy'
-  # - git push -f git@github.com:justbefree/youdefine-docs.git master:gh-pages
+  # - "./deploy.sh"
+  - npm run docs:build
+  - cd docs/.vuepress/dist
+  - git init
+  - git add -A
+  - git commit -m 'deploy'
+  - git push -f git@github.com:justbefree/youdefine-docs.git master:gh-pages
 
 deploy:
 provider: pages

@@ -29,9 +29,5 @@ Some even nicer text
 :::
 
 
-::: danger STOP
-危险区域，禁止通行
-:::
-
 
 
