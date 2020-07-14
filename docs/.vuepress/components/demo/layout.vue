@@ -1,7 +1,3 @@
-# layout
-
-<demo-layout></demo-layout>
-```vue
 <template>
   <div class="layout-box">
     <yn-layout
@@ -87,5 +83,3 @@ div.custom-footer{
   color: #fff;
 }
 </style>
-
-```
