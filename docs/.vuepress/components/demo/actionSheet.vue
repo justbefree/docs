@@ -1,16 +1,43 @@
-# action-sheet
-
-<demo-actionSheet demo="1"></demo-actionSheet>
-```vue
 <template>
-  <yn-action-sheet
-    v-model="basic"
-    :actions="basicActions"
-    v-on:getSelected="getSelect"
-  ></yn-action-sheet>
+  <div>
+    <ul>
+      <li v-if="demo === '1'" @click="handleBasicUsage">
+        <yn-button type="primary">基础用法</yn-button>
+      </li>
+      <li v-if="demo === '2'" @click="handleCancelUsage">
+        <yn-button type="primary">带取消 & 禁止某些选线</yn-button>
+      </li>
+      <li v-if="demo === '3'" @click="handleAsyncUsage">
+        <yn-button type="primary">异步加载</yn-button>
+      </li>
+    </ul>
+    <yn-action-sheet
+      v-model="basic"
+      :actions="basicActions"
+      v-on:getSelected="getSelect"
+    ></yn-action-sheet>
+    <yn-action-sheet
+      v-model="cancel"
+      :actions="cancelActions"
+      v-on:getSelected="getSelect"
+      showCancel
+    ></yn-action-sheet>
+    <yn-action-sheet
+      v-model="async"
+      :loading="loading"
+      @beforeEnter="handleBeforeEnter"
+      :actions="asyncActions"
+      v-on:getSelected="getSelect"
+      showCancel
+    ></yn-action-sheet>
+  </div>
 </template>
 <script>
 export default {
+  name: "DemoActionSheet",
+  props: {
+    demo: String
+  },
   data() {
     return {
       basic: false,
@@ -20,32 +47,7 @@ export default {
         { name: "option3", className: "", disable: true, key: "5" },
         { name: "option4", className: "", disable: false, key: "11" },
         { name: "option5", className: "", disable: true, key: "12" }
-      ]
-    }
-  },
-  methods: {
-    getSelect(e) {
-      console.log(e.name);
-      this.Toast(e.name);
-    }
-  }
-}
-</script>
-```
-<demo-actionSheet demo="2"></demo-actionSheet>
-```vue
-<template>
-  <yn-action-sheet
-    v-model="cancel"
-    :actions="cancelActions"
-    v-on:getSelected="getSelect"
-    showCancel
-  ></yn-action-sheet>
-</template>
-<script>
-export default {
-  data() {
-    return {
+      ],
       cancel: false,
       cancelActions: [
         { name: "option1", className: "", disable: true, key: "1" },
@@ -54,39 +56,21 @@ export default {
         { name: "option4", className: "", disable: true, key: "11" },
         { name: "option5", className: "", disable: false, key: "12" }
       ],
-    }
-  },
-  methods: {
-    getSelect(e) {
-      console.log(e.name);
-      this.Toast(e.name);
-    }
-  }
-}
-</script>
-```
-<demo-actionSheet demo="3"></demo-actionSheet>
-```vue
-<template>
-  <yn-action-sheet
-    v-model="async"
-    :loading="loading"
-    @beforeEnter="handleBeforeEnter"
-    :actions="asyncActions"
-    v-on:getSelected="getSelect"
-    showCancel
-  ></yn-action-sheet>
-</template>
-<script>
-export default {
-  data() {
-    return {
       async: false,
       loading: false,
-      asyncActions: [],
-    }
+      asyncActions: []
+    };
   },
   methods: {
+    handleBasicUsage() {
+      this.basic = !this.basic;
+    },
+    handleCancelUsage() {
+      this.cancel = !this.cancel;
+    },
+    handleAsyncUsage() {
+      this.async = !this.async;
+    },
     getSelect(e) {
       console.log(e.name);
       this.Toast(e.name);
@@ -108,7 +92,8 @@ export default {
       }, 3000);
     }
   }
-}
+};
 </script>
-```
-
+<style type="text/css" scoped="scoped">
+  ul {list-style: none;padding: 0;}
+</style>
