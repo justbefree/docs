@@ -40,7 +40,7 @@
         <yn-button @click="advanced3" type="primary">
           异步加载数据渲染问题-{{ text.value }}
         </yn-button>
-        <yn-dialog :value="this.show3" closeModelOnClick>
+        <yn-dialog v-model="show3" closeModelOnClick>
           <span>我是固定内容，我后面的是动态内容{{ text.value }}</span>
         </yn-dialog>
       </li>
