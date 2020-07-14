@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-07-13 17:10:28
+* @Last Modified time: 2020-07-14 11:29:16
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -39,5 +39,11 @@ module.exports = {
         ["/yui/date-picker.md", "date-picker"],
       ]
     }
-  ]
+  ],
+  lastUpdated: "Last Updated",
+  docsBranch: 'master',
+  // defaults to false, set to true to enable
+  editLinks: true,
+  // custom text for edit link. Defaults to "Edit this page"
+  editLinkText: "Help us improve this page!"
 };
