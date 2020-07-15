@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-07-14 11:35:52
+* @Last Modified time: 2020-07-15 16:45:52
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -37,6 +37,7 @@ module.exports = {
         ["/yui/submit-action.md", "submit-action"],
         ["/yui/pull-refresh.md", "pull-refresh"],
         ["/yui/date-picker.md", "date-picker"],
+        ["/yui/counter.md", "counter"],
       ]
     }
   ],
