@@ -17,4 +17,8 @@
 
 <style type="text/css" scoped="scoped">
   ul {list-style: none;padding: 0;text-align: center;font-size: 20px;}
+  img{
+    width: auto;
+    height: auto;
+  }
 </style>
