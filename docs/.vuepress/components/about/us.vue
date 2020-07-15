@@ -2,9 +2,9 @@
   <div class="about-us">
     <ul>
       <li>
-        <img src="./images/nana.png">
-        <p>UI components designed by <a href="https://naaano.com/">nana</a></p>
-        <p>You can follow her on <a href="https://www.instagram.com/nanacat733/">instagram</a></p>
+        <img src="./images/Nano.png">
+        <p>UI components designed by <a href="https://naaano.com/">Nano</a></p>
+        <p>You can follow her on <a href="https://www.instagram.com/nanacat733/">Instagram</a></p>
       </li>
     </ul>
   </div>
