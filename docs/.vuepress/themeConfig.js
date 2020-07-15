@@ -2,15 +2,16 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-07-15 16:45:52
+* @Last Modified time: 2020-07-15 17:13:02
 * @E-mail: justbefree@126.com
 */
 module.exports = {
   navbar: [],
   sidebar: [
+    ["yui/install.md", "Installation"],
     {
-      title: "商旅前端基础组件",
-      collapsable: false,
+      title: "Basic components",
+      collapsable: true,
       children: [
         ["/yui/toast.md", "toast"],
         ["/yui/indicator.md", "indicator"],
