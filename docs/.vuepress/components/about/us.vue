@@ -3,8 +3,8 @@
     <ul>
       <li>
         <img src="./images/Nano.png">
-        <p>UI components designed by <a href="https://naaano.com/">Nano</a></p>
-        <p>You can follow her on <a href="https://www.instagram.com/nanacat733/">Instagram</a></p>
+        <p>UI components designed by <a target="_blank" href="https://naaano.com/">Nano</a></p>
+        <p>You can follow her on <a target="_blank" href="https://www.instagram.com/nanacat733/">Instagram</a></p>
       </li>
     </ul>
   </div>
