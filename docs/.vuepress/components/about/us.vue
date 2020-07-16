@@ -8,7 +8,7 @@
       </li>
       <li>
         <img src="./images/justbefree.jpeg">
-        <p>UI components developed by <a target="_blank" href="https://github.com/justbefree?tab=repositories">Just be free</a></p>
+        <p>UI components developed by <a target="_blank" href="http://lizhuang.xyz/">Just be free</a></p>
         <p>You can follow him on <a target="_blank" href="https://github.com/justbefree?tab=repositories">Github</a></p>
       </li>
     </ul>
