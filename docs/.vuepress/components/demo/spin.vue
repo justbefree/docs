@@ -1,7 +1,7 @@
 <template>
   <div class="spin">
     <div v-if="demo === '1'">
-      <h4>trip-bounce</h4>
+      <h4>triple-bounce</h4>
       <yn-spin type="triple-bounce"></yn-spin>
     </div>
     <div v-if="demo === '2'">
