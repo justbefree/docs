@@ -2,7 +2,7 @@
 
 <demo-spin demo="1"></demo-spin>
 ```vue
-<yn-spin type="trip-bounce"></yn-spin>
+<yn-spin type="triple-bounce"></yn-spin>
 ```
 <demo-spin demo="2"></demo-spin>
 ```vue
