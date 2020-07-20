@@ -6,12 +6,12 @@
   <div>
     <span>total {{ total }}</span>
     <ul>
-      <li>
-        <yn-counter min="-3" max="10" defaultValue="2" steps="1" @change="(e) => { this.handleChange('value1', e); }"></yn-counter>
+      <li v-for="(count, i) in counts">
+        <yn-counter :key="i" v-model="count.value" :min="count.min" :max="count.max" steps="1" @change="handleChange"></yn-counter>
       </li>
-      <li>
+      <!-- <li>
         <yn-counter min="-3" max="10" defaultValue="2" steps="1" @change="(e) => { this.handleChange('value2', e); }"></yn-counter>
-      </li>
+      </li> -->
     </ul>
   </div>
 </template>
@@ -23,22 +23,23 @@
     },
     data() {
       return {
-        value1: 0,
-        value2: 0
+        counts: [{ value: 0, min: -5, max: 10 }, { value: 1, min: -2, max: 6 }, { value: 2, min: 1, max: 4 }]
       };
     },
     computed: {
       total() {
-        return this.value1 + this.value2;
+        let result = 0;
+        this.counts.forEach(e => {
+          result += e.value;
+        });
+        return result;
       }
     },
     methods: {
-      handleChange(attr, e) {
-        this[attr] = e.parsedValue;
+      handleChange(e) {
         console.log(e);
       }
     }
   };
 </script>
-
 ```
