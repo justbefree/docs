@@ -8,7 +8,7 @@
     <yn-picker
       v-model="show1"
       :columns="columns1"
-      @pick="handlePick"
+      @confirm="handleConfirm"
       @change="handleChange"
     ></yn-picker>
   </div>
@@ -37,9 +37,9 @@ export default {
       console.log(`选择第${index}个，值为${pick}`);
       this.Toast(`选择第${index}个，值为${pick}`);
     },
-    handlePick(e) {
+    handleConfirm(e) {
       console.log(e);
-      // this.Toast(`选择的是${e}`);
+      this.Toast(JSON.stringify(e));
     },
     handleClick(i) {
       this[`show${i}`] = !this[`show${i}`];
@@ -57,7 +57,7 @@ export default {
     <yn-picker
       v-model="show2"
       :columns="columns2"
-      @pick="handlePick"
+      @confirm="handleConfirm"
       @change="handleChange"
     ></yn-picker>
   </div>
@@ -82,9 +82,9 @@ export default {
       console.log(`选择第${index}个，值为${pick}`);
       this.Toast(`选择第${index}个，值为${pick}`);
     },
-    handlePick(e) {
+    handleConfirm(e) {
       console.log(e);
-      // this.Toast(`选择的是${e}`);
+      this.Toast(JSON.stringify(e));
     },
     handleClick(i) {
       this[`show${i}`] = !this[`show${i}`];
@@ -104,7 +104,7 @@ export default {
     <yn-picker
       v-model="show3"
       :columns="columns3"
-      @pick="handlePick"
+      @confirm="handleConfirm"
       @change="handleChange"
     ></yn-picker>
   </div>
@@ -130,9 +130,9 @@ export default {
       console.log(`选择第${index}个，值为${pick}`);
       this.Toast(`选择第${index}个，值为${pick}`);
     },
-    handlePick(e) {
+    handleConfirm(e) {
       console.log(e);
-      // this.Toast(`选择的是${e}`);
+      this.Toast(JSON.stringify(e));
     },
     handleClick(i) {
       this[`show${i}`] = !this[`show${i}`];
@@ -151,7 +151,7 @@ export default {
     <yn-picker
       v-model="show4"
       :columns="columns4"
-      @pick="handlePick"
+      @confirm="handleConfirm"
       @change="handleChange"
     ></yn-picker>
   </div>
@@ -173,9 +173,9 @@ export default {
       console.log(`选择第${index}个，值为${pick}`);
       this.Toast(`选择第${index}个，值为${pick}`);
     },
-    handlePick(e) {
+    handleConfirm(e) {
       console.log(e);
-      // this.Toast(`选择的是${e}`);
+      this.Toast(JSON.stringify(e));
     },
     handleClick(i) {
       this[`show${i}`] = !this[`show${i}`];
