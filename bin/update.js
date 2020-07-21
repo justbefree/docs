@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-21 13:46:22
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-07-21 15:19:28
+* @Last Modified time: 2020-07-21 18:46:16
 * @E-mail: justbefree@126.com
 */
 const fs = require("fs");
@@ -10,7 +10,7 @@ const path = require("path");
 const package = require("../package.json");
 const pkgVersion = package.dependencies["yn-components"].replace("^", "");
 const axios = require("axios");
-const content = `yn-components was updated, the latest version is ${pkgVersion}, you can read online docs for latest updates. https://justbefree.github.io/youdefine-docs/`;
+const content = `yn-components was updated, the latest version is ${pkgVersion}, you can read [online docs](https://justbefree.github.io/youdefine-docs/) for latest updates.`;
 let data = "";
 try {
   data = fs.readFileSync("docs/.updates", "utf-8");
