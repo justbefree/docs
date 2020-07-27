@@ -85,6 +85,13 @@
             <yn-field v-model="ynBirthday" label="出生日期"></yn-field>
           </yn-field-group>
         </li>
+        <li v-if="demo === '10'">
+          <yn-field
+            v-model="customLabel"
+          >
+            <div slot="label">自定义label</div>
+          </yn-field>
+        </li>
       </ul>
     </div>
   </div>
@@ -104,6 +111,7 @@ export default {
       disabled: "1111111111",
       clear: "",
       customIcon: "",
+      customLabel: "",
       textarea: "",
       ynName: "",
       ynPhone: "",

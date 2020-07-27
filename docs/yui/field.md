@@ -74,9 +74,21 @@
   type="text"
 ></yn-field>
 ```
+
 ::: tip
 [Valid iconName list](../yui/iconfont.md) 
 :::
+
+
+#### custom label
+<demo-field demo="10"></demo-field>
+```vue
+<yn-field
+  v-model="customLabel"
+>
+  <div slot="label">自定义label</div>
+</yn-field>
+```
 
 #### textarea
 <demo-field demo="8"></demo-field>
