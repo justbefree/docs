@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 09:56:25
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-07-13 16:35:45
+* @Last Modified time: 2020-07-31 16:50:40
 * @E-mail: justbefree@126.com
 */
 const themeConfig = require("./themeConfig");
@@ -20,8 +20,8 @@ module.exports = {
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
-      title: 'YnComponents',
-      description: 'yn-components docs'
+      title: 'Youdefine',
+      description: 'youdefine docs'
     }
     // '/zh/': {
     //   lang: 'zh-CN',
