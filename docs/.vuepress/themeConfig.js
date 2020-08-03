@@ -2,14 +2,15 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-07-15 18:56:37
+* @Last Modified time: 2020-08-03 13:10:47
 * @E-mail: justbefree@126.com
 */
 module.exports = {
   nav: [
     { text: "Home", link: "/" },
     { text: "components", link: "/yui/" },
-    { text: "BEM", link: "/bem/" }
+    { text: "BEM", link: "/bem/" },
+    { text: "vue2-pro-cli", link: "/vue2-cli/" }
   ],
   sidebar: {
     "/yui/": [
@@ -49,43 +50,22 @@ module.exports = {
     ],
     "/bem/": [
       ""
+    ],
+    "/vue2-cli/": [
+      ["structure.md", "Directory structure"],
+      {
+        title: "Design principle",
+        collapsable: true,
+        children: [
+          ["component.md", "Component"],
+          ["router.md", "Router"],
+          ["i18n.md", "I18n"],
+          ["store.md", "Store"],
+          ["export-application.md", "Application"]
+        ]
+      }
     ]
   },
-  // sidebar: [
-  //   ["yui/install.md", "Installation"],
-  //   {
-  //     title: "Basic components",
-  //     collapsable: true,
-  //     children: [
-  //       ["/yui/toast.md", "toast"],
-  //       ["/yui/indicator.md", "indicator"],
-  //       ["/yui/spin.md", "spin"],
-  //       ["/yui/iconfont.md", "iconfont"],
-  //       ["/yui/checkbox.md", "checkbox"],
-  //       ["/yui/radiobox.md", "radiobox"],
-  //       ["/yui/calendar.md", "calendar"],
-  //       ["/yui/popup.md", "popup"],
-  //       ["/yui/button.md", "button"],
-  //       ["/yui/flex.md", "flex"],
-  //       ["/yui/action-sheet.md", "action-sheet"],
-  //       ["/yui/field.md", "field"],
-  //       ["/yui/layout.md", "layout"],
-  //       ["/yui/city-picker.md", "city-picker"],
-  //       ["/yui/sticky.md", "sticky"],
-  //       ["/yui/dialog.md", "dialog"],
-  //       ["/yui/picky-stepper.md", "picky-stepper"],
-  //       ["/yui/dropdown-menu.md", "dropdown-menu"],
-  //       ["/yui/picker.md", "picker"],
-  //       ["/yui/swipe.md", "swipe"],
-  //       ["/yui/tabs.md", "tabs"],
-  //       ["/yui/slider.md", "slider"],
-  //       ["/yui/submit-action.md", "submit-action"],
-  //       ["/yui/pull-refresh.md", "pull-refresh"],
-  //       ["/yui/date-picker.md", "date-picker"],
-  //       ["/yui/counter.md", "counter"],
-  //     ]
-  //   }
-  // ],
   lastUpdated: "Last Updated",
   // Assumes GitHub. Can also be a full GitLab url.
   repo: "justbefree/youdefine-docs",
