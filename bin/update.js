@@ -2,15 +2,17 @@
 * @Author: Just be free
 * @Date:   2020-07-21 13:46:22
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-07-21 18:46:16
+* @Last Modified time: 2020-08-03 17:59:02
 * @E-mail: justbefree@126.com
 */
 const fs = require("fs");
 const path = require("path");
 const package = require("../package.json");
-const pkgVersion = package.dependencies["yn-components"].replace("^", "");
+const dependencies = { ...package.dependencies, ...package.devDependencies };
+const pkgName = package.pkgName;
+const pkgVersion = dependencies[pkgName].replace("^", "");
 const axios = require("axios");
-const content = `yn-components was updated, the latest version is ${pkgVersion}, you can read [online docs](https://justbefree.github.io/youdefine-docs/) for latest updates.`;
+const content = `${pkgName} was updated, the latest version is ${pkgVersion}, you can read [online docs](https://justbefree.github.io/youdefine-docs/) for latest updates.`;
 let data = "";
 try {
   data = fs.readFileSync("docs/.updates", "utf-8");
