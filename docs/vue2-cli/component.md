@@ -1,5 +1,9 @@
 # 如何写一个组件
 
+::: tip 提示
+如果你还不清楚如何写基于class修饰的Vue组件，可以先看一下class修饰[基础用法](./vue-class-component.md)
+:::
+
 ts版Vue组件跟js版template部分没有太大区别。js部分区别在于以下几点：
 
 

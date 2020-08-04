@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-08-03 13:10:47
+* @Last Modified time: 2020-08-04 16:32:25
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -61,7 +61,8 @@ module.exports = {
           ["router.md", "Router"],
           ["i18n.md", "I18n"],
           ["store.md", "Store"],
-          ["export-application.md", "Application"]
+          ["export-application.md", "Application"],
+          ["vue-class-component.md", "Vue class component"]
         ]
       }
     ]
