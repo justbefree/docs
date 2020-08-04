@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-08-04 16:32:25
+* @Last Modified time: 2020-08-04 18:00:26
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -48,9 +48,7 @@ module.exports = {
         ]
       }
     ],
-    "/bem/": [
-      ""
-    ],
+    "/bem/": [],
     "/vue2-cli/": [
       ["structure.md", "Directory structure"],
       {
