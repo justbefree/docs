@@ -174,7 +174,7 @@ export default {
 ## hooks
 > 组件声明周期钩子函数（mounted, created, destroyed...及render方法)都可直接在类里面声明方法
 
-```vue
+```js
 import Vue from 'vue'
 import Component from 'vue-class-component'
 
