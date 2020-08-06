@@ -55,7 +55,7 @@
 .block__elem--mod { }
 ```
 
-## Example
+## Examples
 
 ```html
 <form class="form form--theme-xmas form--simple">
@@ -78,7 +78,7 @@
 
 - [awesome-bem-scss](https://github.com/justbefree/awesome-bem-scss)
 
-参考连接
+## Reference
 - [Get BEM](http://getbem.com)
 - [bem.info](https://en.bem.info/methodology/quick-start/)
 
