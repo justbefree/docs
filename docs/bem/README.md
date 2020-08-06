@@ -74,6 +74,10 @@
 .form__submit--disabled { }
 ```
 
+## Implemented
+
+- [awesome-bem-scss](https://github.com/justbefree/awesome-bem-scss)
+
 参考连接
 - [Get BEM](http://getbem.com)
 - [bem.info](https://en.bem.info/methodology/quick-start/)
