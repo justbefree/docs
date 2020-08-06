@@ -1,4 +1,9 @@
 # vue2-pro-cli
+
+::: warning 注意
+如果你还不懂如何用基于class的形式写组件，建议你先看一下 [Vue Class Component](./vue-class-component.md)
+:::
+
 快速生成基于vue2 + vuex + vue-router 的前端项目
 
 # Installation
