@@ -20,6 +20,10 @@
       <h4>rotate</h4>
       <yn-spin type="rotate"></yn-spin>
     </div>
+    <div v-if="demo === '6'">
+      <h4>rotate svg</h4>
+      <yn-spin type="rotate-svg" size="50"></yn-spin>
+    </div>
   </div>
 </template>
 

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "pkgName": "",
+  "pkgName": "yn-components",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vuepress dev docs",
@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "moment": "^2.27.0",
-    "yn-components": "^0.4.6"
+    "yn-components": "^0.4.9"
   }
 }
