@@ -7,14 +7,14 @@
 ts版Vue组件跟js版template部分没有太大区别。js部分区别在于以下几点：
 
 
-- 首先要引入类的修饰器, 然后继承基类（Super）创建新的组件类, 以下是创建一个HelloWorld类
+- 首先要引入类的修饰器, 然后继承基类（Application）创建新的组件类, 以下是创建一个HelloWorld类
 
 ```vue
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import Super from "@/core/Super";
+import Application from "@/Application";
 @Component
-export default class HelloWorld extends Super {
+export default class HelloWorld extends Application {
 }
 </script>
 ```
@@ -24,9 +24,9 @@ export default class HelloWorld extends Super {
 ```vue
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import Super from "@/core/Super";
+import Application from "@/Application";
 @Component
-export default class HelloWorld extends Super {
+export default class HelloWorld extends Application {
   public name = "张三";
   getName() {
     return this.name;
@@ -41,11 +41,11 @@ export default class HelloWorld extends Super {
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 import HelloWorld from "@/applications/test/hello-world";
-import Super from "@/core/Super";
+import Application from "@/Application";
 @Component({
   componets: { HelloWorld }
 })
-export default class HelloWorld extends Super {
+export default class HelloWorld extends Application {
 }
 </script>
 ```
@@ -57,7 +57,7 @@ export default class HelloWorld extends Super {
 import { mapActions, mapState, mapGetters } from "vuex";
 import { Component, Prop, Vue } from "vue-property-decorator";
 import HelloWorld from "@/applications/test/hello-world";
-import Super from "@/core/Super";
+import Application from "@/Application";
 @Component({
   componets: { HelloWorld },
   methods: {
@@ -68,7 +68,7 @@ import Super from "@/core/Super";
     ...mapGetters("test", ["getNumber"])
   }
 })
-export default class HelloWorld extends Super {
+export default class HelloWorld extends Application {
 }
 </script>
 ```
