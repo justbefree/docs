@@ -289,5 +289,17 @@ export class HelloWorld extends mixins(Hello, World) {
 }
 ```
 
+## @Prop
+## @PropSync
+## @Watch
+## @Provide
+## @Inject
+## @Model
+## @ProvideReactive
+## @InjectReactive
+## @Emit
+## @Ref
+
+[以上请参考](./vue-property-decorator.md)
 
 

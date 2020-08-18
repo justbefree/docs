@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-08-04 18:00:26
+* @Last Modified time: 2020-08-18 17:44:32
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -62,7 +62,8 @@ module.exports = {
           ["export-application.md", "Application"],
           ["vue-class-component.md", "Vue class component"]
         ]
-      }
+      },
+      ["vue-property-decorator.md", "Vue property decorator"]
     ]
   },
   lastUpdated: "Last Updated",
