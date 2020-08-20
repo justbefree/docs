@@ -76,7 +76,7 @@
 
 ## Implemented
 
-- [awesome-bem-scss](https://github.com/justbefree/awesome-bem-scss)
+- [awesome-scss-bem](https://github.com/justbefree/awesome-scss-bem)
 
 ## Reference
 - [Get BEM](http://getbem.com)
