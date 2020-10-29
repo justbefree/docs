@@ -5,7 +5,9 @@
 this.Dialog.alert({
   title: "这个是标题",
   message: "这个是内容",
-  beforeClose: () => {// 关闭之前的回调事件
+  beforeClose: (e, status) => {// 关闭之前的回调事件
+    // e代表点击了哪个事件，status表示当前事件是否执行完的状态，pending代表执行中，
+    // resolved代表执行结束
   },
   afterClose: () => {// 关闭之后的回调事件
     this.Toast("彻底关闭了");
@@ -32,8 +34,8 @@ this.Dialog.confirm({
 this.Dialog.confirm({
   title: "这个是标题",
   message: "这个是内容",
-  beforeClose: (e) => {
-    console.log("这个是会告诉你点击了哪个按钮", e);
+  beforeClose: (e, status) => {
+    console.log("这个是会告诉你点击了哪个按钮", e, status);
     return new Promise((resolve, reject) => {
       console.log(reject);
       setTimeout(() => {
@@ -51,8 +53,8 @@ this.Dialog.confirm({
 this.Dialog.confirm({
   title: "这个是标题",
   message: "<span>我是span标签</span><br/>我换行了",
-  beforeClose: (e) => {
-    console.log("这个是会告诉你点击了哪个按钮", e);
+  beforeClose: (e, status) => {
+    console.log("这个是会告诉你点击了哪个按钮", e, status);
     return new Promise((resolve, reject) => {
       console.log(reject);
       setTimeout(() => {

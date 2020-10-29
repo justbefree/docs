@@ -86,11 +86,11 @@ export default {
     handleClick() {
       console.log("收到回调信息");
     },
-    handleBeforeClose(e) {
+    handleBeforeClose(e, status) {
       if (e === "cancel") {
         return false;
       }
-      console.log("这个是会告诉你点击了哪个按钮", e);
+      console.log("这个是会告诉你点击了哪个按钮", e, status);
       return new Promise((resolve, reject) => {
         console.log(reject);
         setTimeout(() => {
@@ -100,8 +100,8 @@ export default {
         console.log("错误信息在这里展示", err);
       });
     },
-    handleBeforeClose2(e) {
-      console.log("这个是会告诉你点击了哪个按钮", e);
+    handleBeforeClose2(e, status) {
+      console.log("这个是会告诉你点击了哪个按钮", e, status);
       return new Promise((resolve, reject) => {
         console.log(reject);
         setTimeout(() => {

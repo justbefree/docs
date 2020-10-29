@@ -1,2 +1,2 @@
-> 1. 修复：起始日期和终点日期一致，changedNode的日期key相互覆盖导致报错
-> 2. 修复：yn-field组件 input绑定的是Input标签属性value，导致v-model数据变了，而input框显示没有更新
+> 1. 日历样式调整，新增monthTtitleParser 支持自定义title
+> 2. 修复：Dialog 回调函数重复执行问题
