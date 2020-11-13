@@ -1,2 +1,2 @@
-> 1. 日历样式调整，新增monthTtitleParser 支持自定义title
-> 2. 修复：Dialog 回调函数重复执行问题
+> 1. 新增skeleton骨架组件
+> 2. 新增infinite-list 动画列表
