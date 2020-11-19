@@ -1,4 +1,4 @@
-# infinite-list
+# animation-list
 
 ::: warning 注意
 刷新页面查看当前组件效果
