@@ -3,7 +3,7 @@
 ::: warning 注意
 刷新页面查看当前组件效果
 :::
-<demo-infiniteList demo="1"></demo-infiniteList>
+<demo-animationList demo="1"></demo-animationList>
 ```vue
 <yn-infinite-list :dataList="asyncData">
   <yn-infinite-list-item style="borderBottom: 1px solid #eee;line-height: 100px" height="100" v-for="i in asyncData" :key="i">

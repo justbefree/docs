@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-11-13 16:49:17
+* @Last Modified time: 2020-11-19 14:39:38
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -46,7 +46,7 @@ module.exports = {
           ["date-picker.md", "date-picker"],
           ["counter.md", "counter"],
           ["skeleton.md", "skeleton"],
-          ["infinite-list.md", "infinite-list"],
+          ["animation-list.md", "animation-list"],
         ]
       }
     ],

@@ -1,17 +1,17 @@
 <template>
   <div class="infinite-list-box">
     <template v-if="demo === '1'">
-      <yn-infinite-list :dataList="asyncData">
-        <yn-infinite-list-item style="borderBottom: 1px solid #eee;line-height: 100px" height="100" v-for="i in asyncData" :key="i">
+      <yn-animation-list :dataList="asyncData">
+        <yn-animation-list-item style="borderBottom: 1px solid #eee;line-height: 100px" height="100" v-for="i in asyncData" :key="i">
           <span>这是第{{i}}个元素</span>
-        </yn-infinite-list-item>
-      </yn-infinite-list>
+        </yn-animation-list-item>
+      </yn-animation-list>
     </template>
   </div>
 </template>
 <script type="text/javascript">
   export default {
-    name: "DemoInfiniteList",
+    name: "DemoAnimationList",
     props: {
       demo: [String, Number]
     },

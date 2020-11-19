@@ -1,2 +1,3 @@
-> 1. 新增skeleton骨架组件
-> 2. 新增infinite-list 动画列表
+> 1. 组件infinite-list更名为animation-list
+> 2. 优化动画入场效果，列表过滤情况下不触发动画
+> 3. 解决layout组件在iOS下滑动不顺问题优化
