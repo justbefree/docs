@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "moment": "^2.27.0",
-    "yn-components": "^0.7.14"
+    "yn-components": "^0.8.3"
   }
 }
