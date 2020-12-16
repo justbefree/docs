@@ -1,3 +1,2 @@
-> 1. 组件infinite-list更名为animation-list
-> 2. 优化动画入场效果，列表过滤情况下不触发动画
-> 3. 解决layout组件在iOS下滑动不顺问题优化
+> 1. 修复：yn-iconfont 默认svgs不可用问题
+> 2. 修复：yn-animation-list-item的transform影响yn-dialog显示问题
