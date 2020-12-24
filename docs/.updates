@@ -1,2 +1,2 @@
-> 1. 修复：yn-iconfont 默认svgs不可用问题
-> 2. 修复：yn-animation-list-item的transform影响yn-dialog显示问题
+> 1. 新增：每个基础组件的TypeScript声明文件
+> 2. 修复：Dialog回调事件beforeClose会出现回调两次bug
