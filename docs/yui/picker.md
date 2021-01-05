@@ -23,19 +23,18 @@ export default {
     return {
       show1: false,
       columns1: [
-        "Delaware",
-        "Florida",
-        "Georqia",
-        "Indiana",
-        "Maine",
-        "Amenda"
+        "Shanghai",
+        "Toyko",
+        "Beijing",
+        "NewYork",
+        "Shenzhen",
+        "Hongkong"
       ]
     };
   },
   methods: {
     handleChange(pick, index) {
-      console.log(`选择第${index}个，值为${pick}`);
-      this.Toast(`选择第${index}个，值为${pick}`);
+      this.Toast(`选择第${index}个，值为${pick.value || pick}`);
     },
     handleConfirm(e) {
       console.log(e);
@@ -72,15 +71,14 @@ export default {
     return {
       show2: false,
       columns2: [
-        { value: ["Delaware", "Florida", "Georqia", "Indiana", "Maine"] },
-        { value: ["Delaware", "Florida", "Georqia", "Indiana", "Maine"] }
+        { value: ["Shanghai", "Toyko", "Beijing", "NewYork", "Shenzhen"], defaultIndex: 2 },
+        { value: ["Shanghai", "Toyko", "Beijing", "NewYork", "Shenzhen"], defaultIndex: 1 }
       ]
     };
   },
   methods: {
     handleChange(pick, index) {
-      console.log(`选择第${index}个，值为${pick}`);
-      this.Toast(`选择第${index}个，值为${pick}`);
+      this.Toast(`选择第${index}个，值为${pick.value || pick}`);
     },
     handleConfirm(e) {
       console.log(e);
@@ -119,16 +117,15 @@ export default {
     return {
       show3: false,
       columns3: [
-        { value: ["Delaware", "Florida", "Georqia", "Indiana", "Maine"] },
-        { value: ["Delaware", "Florida", "Georqia", "Indiana", "Maine"] },
-        { value: ["Delaware", "Florida", "Georqia", "Indiana", "Maine"] }
+        { value: [{ value: "Shanghai", disabled: true }, "Toyko", "Beijing", "NewYork", "Shenzhen"] },
+        { value: ["Shanghai", "Toyko", "Beijing", "NewYork", "Shenzhen"] },
+        { value: ["Shanghai", "Toyko", "Beijing", "NewYork", "Shenzhen"] }
       ]
     };
   },
   methods: {
     handleChange(pick, index) {
-      console.log(`选择第${index}个，值为${pick}`);
-      this.Toast(`选择第${index}个，值为${pick}`);
+      this.Toast(`选择第${index}个，值为${pick.value || pick}`);
     },
     handleConfirm(e) {
       console.log(e);
@@ -170,8 +167,7 @@ export default {
   },
   methods: {
     handleChange(pick, index) {
-      console.log(`选择第${index}个，值为${pick}`);
-      this.Toast(`选择第${index}个，值为${pick}`);
+      this.Toast(`选择第${index}个，值为${pick.value || pick}`);
     },
     handleConfirm(e) {
       console.log(e);
@@ -185,3 +181,43 @@ export default {
 </script>
 ```
 
+<demo-picker demo="5"></demo-picker>
+```vue
+<template>
+  <div>
+    <yn-button type="primary" @click="handleClick(5)">禁止某项选中</yn-button>
+    <yn-picker
+      v-model="show5"
+      :columns="columns5"
+      @confirm="handleConfirm"
+      @change="handleChange"
+    ></yn-picker>
+  </div>
+</template>
+<script type="text/javascript">
+export default {
+  name: "DemoPicker",
+  props: {
+    demo: String
+  },
+  data() {
+    return {
+      show5: false,
+      columns5: [{ value: "北京", disabled: true }, { value: "上海" }, { value: "深圳" }, { value: "广州" }]
+    };
+  },
+  methods: {
+    handleChange(pick, index) {
+      this.Toast(`选择第${index}个，值为${pick.value || pick}`);
+    },
+    handleConfirm(e) {
+      console.log(e);
+      this.Toast(JSON.stringify(e));
+    },
+    handleClick(i) {
+      this[`show${i}`] = !this[`show${i}`];
+    }
+  }
+};
+</script>
+```

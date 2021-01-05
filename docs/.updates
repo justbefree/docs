@@ -1,2 +1,3 @@
-> 1. 新增：每个基础组件的TypeScript声明文件
-> 2. 修复：Dialog回调事件beforeClose会出现回调两次bug
+> 1. 新增：yn-picker组件支持禁止columns的某些项
+> 2. 优化：yn-city-picker组件城市名称文案支持响应式自适应字体
+> 3. 优化：yn-swipe组件销毁的时候取消监听visibilitychange事件
