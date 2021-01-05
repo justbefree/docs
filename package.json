@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "vue2-pro-cli": "^1.0.3",
     "vuepress": "^1.5.2"
   },
