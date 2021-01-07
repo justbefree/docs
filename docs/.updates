@@ -1,3 +1,1 @@
-> 1. 新增：yn-picker组件支持禁止columns的某些项
-> 2. 优化：yn-city-picker组件城市名称文案支持响应式自适应字体
-> 3. 优化：yn-swipe组件销毁的时候取消监听visibilitychange事件
+> 1. 优化：yn-picky-stepper组件当steps props改变的时候重新渲染组件
