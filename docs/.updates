@@ -1,1 +1,2 @@
-> 1. 优化：yn-picky-stepper组件当steps props改变的时候重新渲染组件
+> 1. 新增：yn-submit-action新增不同的布局方式
+> 2. 优化：当yn-submit-action有设置fixed的时候border-bottom不显示
