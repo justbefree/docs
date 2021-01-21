@@ -1,3 +1,1 @@
-> 1. 修复：yn-date-picker当月份或年份修改的时候，天数计算有误
-> 2. 修复：yn-picker当columns数组里面只有1个元素并且是number类型的时候DOM渲染为空
-> 3. 优化：yn-submit-action样式调整
+> 1. 修复：yn-date-picker日期三联动的时候无法按照给定日期正确显示合理范围
