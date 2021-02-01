@@ -1,3 +1,1 @@
-> 1. 修复：yn-date-picker日期显示多一个“0”
-> 2. 新增：支持自定义title 及确定取消按钮文案
-> 3. 优化：“确定”、“取消”按钮宽度由固定50px改为根据内容自适应
+> 1. 修复：[Vue warn]: invalid component name: "_n". Component names should conform to valid custom element name in html5 specification.
