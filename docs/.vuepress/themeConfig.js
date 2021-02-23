@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2020-11-19 14:39:38
+* @Last Modified time: 2021-02-23 10:17:40
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -36,6 +36,7 @@ module.exports = {
           ["sticky.md", "sticky"],
           ["dialog.md", "dialog"],
           ["picky-stepper.md", "picky-stepper"],
+          ["dropdown.md", "dropdown"],
           ["dropdown-menu.md", "dropdown-menu"],
           ["picker.md", "picker"],
           ["swipe.md", "swipe"],

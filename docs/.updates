@@ -1,1 +1,1 @@
-> 1. 修复：[Vue warn]: invalid component name: "_n". Component names should conform to valid custom element name in html5 specification.
+> 1. 新增：yn-dropdown组件
