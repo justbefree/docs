@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-02-23 10:17:40
+* @Last Modified time: 2021-03-05 14:06:39
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -71,7 +71,7 @@ module.exports = {
   },
   lastUpdated: "Last Updated",
   // Assumes GitHub. Can also be a full GitLab url.
-  repo: "justbefree/youdefine-docs",
+  repo: "justbefree/docs",
   // Customising the header label
   // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
   repoLabel: 'Contribute!',
@@ -79,7 +79,7 @@ module.exports = {
   // Optional options for generating "Edit this page" link
 
   // if your docs are in a different repo from your main project:
-  docsRepo: "justbefree/youdefine-docs",
+  docsRepo: "justbefree/docs",
   // if your docs are not at the root of the repo:
   docsDir: "docs",
   docsBranch: "master",

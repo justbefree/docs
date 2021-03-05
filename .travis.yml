@@ -20,7 +20,7 @@ script:
   - git commit -m 'deploy'
   # - git push -f git@github.com:justbefree/youdefine-docs.git master:gh-pages
   # https://github.com/justbefree/youdefine-docs.git
-  - git push -f https://${GITHUB_TOKEN}@github.com/justbefree/youdefine-docs.git master:gh-pages
+  - git push -f https://${GITHUB_TOKEN}@github.com/justbefree/docs.git master:gh-pages
   - npm run update:info
 
 deploy:

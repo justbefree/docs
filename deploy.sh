@@ -2,7 +2,7 @@
 # @Author: Just be free
 # @Date:   2020-07-10 16:26:34
 # @Last Modified by:   Just be free
-# @Last Modified time: 2020-07-10 18:58:56
+# @Last Modified time: 2021-03-05 14:04:53
 
 #!/usr/bin/env sh
 
@@ -26,6 +26,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:justbefree/justbefree.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:justbefree/youdefine-docs.git master:gh-pages
+git push -f git@github.com:justbefree/docs.git master:gh-pages
 
 cd -
