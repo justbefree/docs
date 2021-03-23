@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "pkgName": "",
+  "pkgName": "yn-components",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "moment": "^2.27.0",
-    "yn-components": "^1.4.1"
+    "yn-components": "^1.4.4"
   }
 }
