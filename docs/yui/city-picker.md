@@ -38,6 +38,9 @@ export default {
     };
   },
   methods: {
+    parse(city, nameSpace) {
+      return `${nameSpace} ${city.CityName}`;
+    },
     getHistory() {
       return {
         title: "历史查询",
@@ -227,6 +230,7 @@ export default {
   showHistory
   @pick="handlePick"
   v-model="picker7"
+  :parse="parse"
 ></yn-city-picker>
 ```
 <demo-cityPicker demo="8"></demo-cityPicker>

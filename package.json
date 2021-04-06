@@ -1,7 +1,7 @@
 {
   "name": "yn-component-vuepress",
   "version": "1.0.0",
-  "description": "",
+  "description": "yn-components",
   "main": "index.js",
   "pkgName": "",
   "scripts": {
@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "moment": "^2.27.0",
-    "yn-components": "^1.4.4"
+    "yn-components": "^1.5.0"
   }
 }

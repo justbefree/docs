@@ -1,1 +1,2 @@
-> 1. yn-picky-stepper组件支持input或textarea值为空提交
+> 1. yn-city-picker在解析对象的回调函数【parse】新增参数来判断是解析那块数据
+> 2. yn-city-picker针对字母搜索取消全局缓存，改为当前实例组件内缓存
